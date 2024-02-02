@@ -14,4 +14,4 @@ This is a simple Node.js project template.
    ```bash
    npm install express axios ejs mongoose
 
-3. Open your browser and visit http://localhost:3000
+3. Open your browser and visit http://localhost:3000/data
