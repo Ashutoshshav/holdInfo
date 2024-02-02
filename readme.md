@@ -1,7 +1,5 @@
 # Node.js Project
 
-This is a simple Node.js project template.
-
 ## Getting Started
 
 1. Clone the repository:
