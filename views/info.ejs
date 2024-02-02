@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HODLINFO</title>
+        <style>
+                body {
+                        background-color: 
+                        #191d28;
+                        color: white;
+                }
+
+                h1 {
+                        margin: auto;
+                }
+
+                header {
+                        display: flex;
+                        justify-content: space-evenly;
+                }
+
+                button {
+                        background-color: aqua;
+                        border-radius: 10px;
+                }
+
+                .data {
+                        margin: auto;
+                }
+        </style>
+</head>
+<body>
+        <header>
+                <h1>HODLINFO</h1>
+
+                <select name="" id="">
+                        <option value="">INR</option>
+                </select>
+
+                <select name="" id="">
+                        <option value="">BTC</option>
+                        <option value="">TRC</option>
+                        <option value="">IOST</option>
+                </select>
+
+                <button>Connect Telegram</button>
+        </header>
+        <div class="data">
+                <% for(let data of dataFromDB) { %>
+                        <p>Name : <%= data.name %></p>
+                        <p>Last Traded Price : <%= data.last %></p>
+                        <p>Buy Price : <%= data.buy %></p>
+                        <p>Sell Price : <%= data.sell %></p>
+                        <p>Volume : <%= data.volume %></p>
+                        <p>Base Unit : <%= data.base_unit %></p>
+                        <br><br>
+                <% } %>
+        </div>
+</body>
+</html>
